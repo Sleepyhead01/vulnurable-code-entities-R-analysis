@@ -4,7 +4,7 @@ input : 'pl'
 output : 'nl'
 lang: 'java'
 data_path : '/scratch/st-fhendija-1/millon/CodeAttack/data/java_test.jsonl'
-victim_model_ckpt: '/scratch/st-fhendija-1/millon/CodeAttack/models/finetuned_models_summarize_java_codet5_base.bin'
+victim_model_ckpt: 'CodeAttack/models/finetuned_models_summarize_java_codet5_base.bin'
 max_source_length: 256
 max_target_length: 128
 output_path: 'adversarial_attack/generation/output/b_1_take2'
