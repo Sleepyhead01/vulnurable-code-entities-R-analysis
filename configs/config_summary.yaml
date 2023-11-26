@@ -1,0 +1,48 @@
+task : 'summarize'
+victim_model : 'codet5'
+input : 'pl'
+output : 'nl'
+lang: 'java'
+data_path : '/scratch/st-fhendija-1/millon/CodeAttack/data/java_test.jsonl'
+victim_model_ckpt: '/scratch/st-fhendija-1/millon/CodeAttack/models/finetuned_models_summarize_java_codet5_base.bin'
+max_source_length: 256
+max_target_length: 128
+output_path: 'adversarial_attack/generation/output/b_1_take2'
+mlm_path : 'microsoft/codebert-base-mlm'
+output_dir : ''
+start : 0
+end : 10000
+k : 50
+threshold_pred_score : 0.3
+batch_size : 256
+num_label : 0
+use_bpe : 1
+use_ast_constraint : 1
+use_dfg_constraint : 0
+use_pred_idx: 1
+bleu_theta: 1
+
+
+# task : 'summarize'
+# victim_model : 'codet5'
+# input : 'pl'
+# output : 'nl'
+# lang: 'r'
+# data_path : '/scratch/st-fhendija-1/millon/CodeAttack/data/test.jsonl'
+# victim_model_ckpt: '/scratch/st-fhendija-1/millon/CodeAttack/models/pytorch_model.bin'
+# max_source_length: 256
+# max_target_length: 128
+# output_path: 'adversarial_attack/generation/output/b_50'
+# mlm_path : 'microsoft/codebert-base-mlm'
+# output_dir : ''
+# start : 0
+# end : 4000
+# k : 50
+# threshold_pred_score : 0.3
+# batch_size : 256
+# num_label : 0
+# use_bpe : 1
+# use_ast_constraint : 1
+# use_dfg_constraint : 0
+# use_pred_idx: 1
+# bleu_theta: 50

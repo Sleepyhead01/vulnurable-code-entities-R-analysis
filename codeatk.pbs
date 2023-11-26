@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#PBS -l walltime=168:00:00,select=1:ncpus=8:mem=48gb:ngpus=1:gpu_mem=32gb
+#PBS -N millon_codeattack
+#PBS -A st-fhendija-1-gpu
+#PBS -o output1_take2.txt
+#PBS -e error1_take2.txt
+#PBS -M millonmadhurdas@gmail.com
+
+##############################
+cd $PBS_O_WORKDIR
+
+source ~/.bashrc
+conda activate Old_R
+
+# python codeattack.py --lang r
+python codeattack.py 
+
