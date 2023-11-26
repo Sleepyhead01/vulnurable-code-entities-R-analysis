@@ -36,10 +36,9 @@ To install the dependencies please execute the command ```pip install -r require
 On running ```python codeattack.py``` the result files are generated as <no. of samples>.json.
 Use this file to run the ```RAnalysis.ipynb``` to generate the importance and normalised plots.
 
-![image](https://github.com/Sleepyhead01/CodeAttack-R/assets/69421538/4c80fb09-bfd3-4d11-860b-fffb526ecd78)
+![image](https://github.com/Sleepyhead01/vulnurable-code-entities-R-analysis/assets/69421538/9eed1cc7-bd13-4828-838b-181caa28fc70)
 
-![image](https://github.com/Sleepyhead01/CodeAttack-R/assets/69421538/edabd364-ee61-4cd2-9872-ad8c2ee50664)
-
+![image](https://github.com/Sleepyhead01/vulnurable-code-entities-R-analysis/assets/69421538/70b2e69f-f997-4c56-abf9-985eb695cb21)
 
 This repository is heavily inspired by the code for the AAAI 2023 paper [CodeAttack: Code-based Adversarial Attacks for Pre-Trained Programming Language Models](https://arxiv.org/pdf/2206.00052.pdf).
 
